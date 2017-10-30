@@ -1,8 +1,9 @@
+import os
 from telegram.ext import Updater
 from telegram.ext import CommandHandler, MessageHandler, Filters
 
 # Вставьте в кавычки токен, полученный вами у BotFather.
-TOKEN = 'введите-ваш-токен'
+TOKEN = os.environ['TOKEN']
 
 
 def start(bot, update):
